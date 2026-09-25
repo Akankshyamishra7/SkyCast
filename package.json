@@ -1,0 +1,9 @@
+{
+  "name": "skycast-weather",
+  "version": "1.0.0",
+  "description": "SkyCast Live Weather Forecasting Dashboard",
+  "scripts": {
+    "dev": "npx serve -l 8080 -s .",
+    "start": "npx serve -l 8080 -s ."
+  }
+}

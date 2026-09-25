@@ -208,6 +208,8 @@ body {
 
 /* --- Header Section --- */
 .app-header {
+  position: relative;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -298,6 +300,7 @@ body {
   max-width: 580px;
   min-width: 260px;
   position: relative;
+  z-index: 1001;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -305,6 +308,7 @@ body {
 
 .search-form {
   position: relative;
+  z-index: 1002;
   width: 100%;
 }
 
@@ -403,15 +407,16 @@ body {
   left: 0;
   right: 0;
   background: var(--bg-secondary);
-  border: 1px solid var(--card-border);
+  border: 1px solid var(--card-border-hover);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lg);
-  max-height: 320px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 189, 248, 0.25);
+  max-height: 350px;
   overflow-y: auto;
-  z-index: 100;
+  z-index: 99999;
   display: none;
   padding: 0.4rem;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }
 
 .search-dropdown.active {
